@@ -1,7 +1,6 @@
 from typing import List
 from .model import Province, City, Area, Street, Village
-import sqlite3
-
+import sqlite3, os
 
 # DB 接口
 class Interface():
@@ -64,8 +63,9 @@ class GeosDB(Interface):
 
 
 def DBCreator() ->List[Interface]:
+    basePath = os.path.abspath(os.path.join(__file__, os.path.pardir, os.path.pardir,"db"))
     return [
-        GeosDB(sqlite3.connect('./db/china.sqlite'))
+        GeosDB(sqlite3.connect(os.path.join(basePath, './china.sqlite')))
     ]
 
 __all__ = ["DBCreator"]
