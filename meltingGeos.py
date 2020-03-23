@@ -18,6 +18,6 @@ def findArgSeach():
 
 if __name__ == "__main__":
     args = findArgSeach()
-    print(Geos().search(args.search, args.depth))
+    print(Geos().findall(args.search, args.depth))
 
 

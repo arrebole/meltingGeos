@@ -6,10 +6,10 @@ class Province:
         self.name = name
     
     def __str__(self) ->str:
-        return f"(type: '{self.type}'', code: '{self.code}'', name: '{self.name}')"
+        return f"type: '{self.type}'', code: '{self.code}'', name: '{self.name}'"
     
     def __repr__(self) ->str:
-        return f"(type: '{self.type}'', code: '{self.code}'', name: '{self.name}')"
+        return f"type: '{self.type}'', code: '{self.code}'', name: '{self.name}'"
     
 
 class City:
@@ -19,10 +19,10 @@ class City:
         self.name = name
     
     def __str__(self) ->str:
-        return f"(type: '{self.type}'', code: '{self.code}'', name: '{self.name}')"
+        return f"type: '{self.type}'', code: '{self.code}'', name: '{self.name}'"
     
     def __repr__(self) ->str:
-        return f"(type: '{self.type}'', code: '{self.code}'', name: '{self.name}')"
+        return f"type: '{self.type}'', code: '{self.code}'', name: '{self.name}'"
 
 
 class Area:
@@ -32,10 +32,10 @@ class Area:
         self.name = name
     
     def __str__(self) ->str:
-        return f"(type: '{self.type}'', code: '{self.code}'', name: '{self.name}')"
+        return f"type: '{self.type}'', code: '{self.code}'', name: '{self.name}'"
     
     def __repr__(self) ->str:
-        return f"(type: '{self.type}'', code: '{self.code}'', name: '{self.name}')"
+        return f"type: '{self.type}'', code: '{self.code}'', name: '{self.name}'"
 
 
 class Street:
@@ -45,10 +45,10 @@ class Street:
         self.name = name
     
     def __str__(self) ->str:
-        return f"(type: '{self.type}'', code: '{self.code}'', name: '{self.name}')"
+        return f"type: '{self.type}'', code: '{self.code}'', name: '{self.name}'"
     
     def __repr__(self) ->str:
-        return f"(type: '{self.type}'', code: '{self.code}'', name: '{self.name}')"
+        return f"type: '{self.type}'', code: '{self.code}'', name: '{self.name}'"
 
 
 class Village:

@@ -48,5 +48,12 @@ or lib
 
 ```python
 from meltingGeos.libgs import Geos
-print(Geos().search("鄞州", depth = 3))
+
+Geos().findall("鄞州", depth = 3)
+# [{type: 'area'', code: '330212'', name: '鄞州区'}]
+
+Geos().findone("鄞州", depth = 3)
+# is object no dict
+# {type: 'area'', code: '330212'', name: '鄞州区'}
+
 ```
