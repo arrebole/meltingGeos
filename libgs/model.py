@@ -7,10 +7,10 @@ class Province:
         self.shortName = shortName
     
     def __str__(self) ->str:
-        return f"type: '{self.type}'', code: '{self.code}'', name: '{self.name}', shortName: '{self.shortName}'"
+        return f"type: ‘{self.type}', code: '{self.code}', name: '{self.name}', shortName: '{self.shortName}'"
     
     def __repr__(self) ->str:
-        return f"type: '{self.type}'', code: '{self.code}'', name: '{self.name}', shortName: '{self.shortName}'"
+        return f"type: '{self.type}'', code: '{self.code}', name: '{self.name}', shortName: '{self.shortName}'"
     
 
 class City:
@@ -21,10 +21,10 @@ class City:
         self.shortName = shortName
     
     def __str__(self) ->str:
-        return f"type: '{self.type}'', code: '{self.code}'', name: '{self.name}', shortName: '{self.shortName}'"
+        return f"type: '{self.type}', code: '{self.code}', name: '{self.name}', shortName: '{self.shortName}'"
     
     def __repr__(self) ->str:
-        return f"type: '{self.type}'', code: '{self.code}'', name: '{self.name}', shortName: '{self.shortName}'"
+        return f"type: '{self.type}', code: '{self.code}', name: '{self.name}', shortName: '{self.shortName}'"
 
 
 class Area:
@@ -35,10 +35,10 @@ class Area:
         self.shortName = shortName
     
     def __str__(self) ->str:
-        return f"type: '{self.type}'', code: '{self.code}'', name: '{self.name}', shortName: '{self.shortName}'"
+        return f"type: '{self.type}', code: '{self.code}'', name: '{self.name}', shortName: '{self.shortName}'"
     
     def __repr__(self) ->str:
-        return f"type: '{self.type}'', code: '{self.code}'', name: '{self.name}', shortName: '{self.shortName}'"
+        return f"type: '{self.type}', code: '{self.code}'', name: '{self.name}', shortName: '{self.shortName}'"
 
 
 class Street:
@@ -49,10 +49,10 @@ class Street:
         self.shortName = shortName
     
     def __str__(self) ->str:
-        return f"type: '{self.type}'', code: '{self.code}'', name: '{self.name}', shortName: '{self.shortName}'"
+        return f"type: '{self.type}', code: '{self.code}', name: '{self.name}', shortName: '{self.shortName}'"
     
     def __repr__(self) ->str:
-        return f"type: '{self.type}'', code: '{self.code}'', name: '{self.name}', shortName: '{self.shortName}'"
+        return f"type: '{self.type}', code: '{self.code}', name: '{self.name}', shortName: '{self.shortName}'"
 
 
 class Village:
