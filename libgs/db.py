@@ -11,31 +11,35 @@ class Interface():
 class GeosDB(Interface):
     def __init__(self, db: sqlite3.Connection):
         self._db = db
-    
+
+    def shortName(self, name: str):
+        data = self.execSelect(f"SELECT ShortName FROM extra WHERE Name = '{name}'")
+        return data[0][0]
+
     # provinces 省级查询
     def provinces(self, key:str):
         data = self.execSelect(f"SELECT code,name FROM province WHERE name LIKE '%{key}%'")
-        return [Province(code=item[0], name=item[1]) for item in data]
+        return [Province(code=item[0], name=item[1], shortName=self.shortName(item[1])) for item in data]
     
     # cities 市级查询
     def cities(self, key: str):
         data = self.execSelect(f"SELECT code,name FROM city WHERE name LIKE '%{key}%'")
-        return [City(code=item[0], name=item[1]) for item in data]
+        return [City(code=item[0], name=item[1],shortName=self.shortName(item[1])) for item in data]
     
     # areas 县界查询
     def areas(self, key:str):
         data = self.execSelect(f"SELECT code,name FROM area WHERE name LIKE '%{key}%'")
-        return [Area(code=item[0], name=item[1]) for item in data]
+        return [Area(code=item[0], name=item[1],shortName=self.shortName(item[1])) for item in data]
 
     # streets 乡级查询
     def streets(self, key:str):
         data = self.execSelect(f"SELECT code,name FROM street WHERE name LIKE '%{key}%'")
-        return [Street(code=item[0], name=item[1]) for item in data]
+        return [Street(code=item[0], name=item[1],shortName=self.shortName(item[1])) for item in data]
 
     # villages 村级查询
     def villages(self, key:str):
         data = self.execSelect(f"SELECT code,name FROM street WHERE name LIKE '%{key}%'")
-        return [Village(code=item[0], name=item[1]) for item in data]
+        return [Village(code=item[0], name=item[1],shortName=self.shortName(item[1])) for item in data]
     
     def commad(self)->List:
         return [
