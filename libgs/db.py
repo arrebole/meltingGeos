@@ -14,6 +14,8 @@ class GeosDB(Interface):
 
     def shortName(self, name: str):
         data = self.execSelect(f"SELECT ShortName FROM extra WHERE Name = '{name}'")
+        if len(data) == 0 or len(data[0]) == 0:
+            return name
         return data[0][0]
 
     # provinces 省级查询
