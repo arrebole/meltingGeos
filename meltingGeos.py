@@ -1,7 +1,7 @@
 #! /usr/bin/env python3
 
 from argparse import ArgumentParser
-from libgs import Geos
+from .libgs import Geos
 
 def findArgSeach():
     parser = ArgumentParser(description="Process parser")
